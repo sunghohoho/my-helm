@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  mynginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-07-31T14:23:09.109277+09:00"
+    description: simple mynginx helm
+    digest: 1fd171b036f4b0850e21f3907df27fabe6a6dd834cdb10b5150245b2e64911fc
+    name: mynginx
+    type: application
+    urls:
+    - mynginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-07-31T14:23:09.108833+09:00"
