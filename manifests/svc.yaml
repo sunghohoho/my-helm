@@ -1,16 +1,30 @@
 apiVersion: v1
 kind: Service
 metadata:
+  creationTimestamp: "2024-07-31T05:53:24Z"
   labels:
-    app: webserver
-  name: webserver
+    app: a-nginx
+  name: a-nginx-svc
   namespace: default
+  resourceVersion: "91053"
+  uid: 7728ae03-05bc-41a5-ac6b-29ff7e6a0e73
 spec:
+  clusterIP: 172.20.106.232
+  clusterIPs:
+  - 172.20.106.232
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
   ports:
+  - nodePort: 31297
     port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: webserver
+    app: a-nginx
+  sessionAffinity: None
   type: NodePort
 status:
+  loadBalancer: {}
